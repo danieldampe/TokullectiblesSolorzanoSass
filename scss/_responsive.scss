@@ -1,0 +1,226 @@
+/* --- --- RESPONSIVE --- --- */
+// Responsive 980px // responsive design
+@media screen and (max-width: 980px) {
+    // header
+    .header {
+        // input
+        #button-menu-links {
+            &:checked ~ .navigation-links {
+                display: block;
+            }
+        }
+        // Barra de busqueda
+        .navigation {
+            // Logo
+            .navigation__logo {
+                margin: 0 20px 0 0;
+            }
+            // Iconos de usuario
+            .navigation__user {
+                flex-basis: 13%;
+                min-width: 108.375px;
+        
+                justify-content: space-evenly;
+                // Icono de cuenta
+                .navigation-user__icon-user {
+                    display: block;
+                }
+                // Cuenta
+                .navigation-user__account {
+                    display: none;
+                }
+                // Icono de carrito
+                .navigation-user__icon-cart {
+                    display: block;
+                }
+                // Carrito
+                .navigation-user__cart {
+                    display: none;
+                }
+            }
+            // Boton aparecer menu links
+            .button-menu-links__label {
+                display: block;
+            }
+        }
+        // Links navbar
+        .navigation-links {
+            display: none;
+    
+            width: 100%;
+            padding: 0;
+            // ul
+            .navigation-links__ul {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                // li
+                li {
+                    margin: 0 0 0 30px;
+                    padding: 25px 0;
+                }
+            }
+        }
+    }
+}
+// Responsive 980px // mobile first
+@media screen and (min-width: 980px) {
+    main {
+        // Productos Grid
+        .product-grid {
+            width: 90%;
+            margin: 240px auto 50px auto; /* margin-top / detalle importante no funcionaba en el main */
+        
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 0;
+            place-items: center center;
+
+            // Contenedor de imagen
+            .product-grid__cont-img {
+                width: 100%;
+                height: 200px;
+                overflow: hidden;
+
+                // imagen
+                img {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                
+                    object-fit: contain;
+                    object-position: center center;
+                }
+            }
+
+            // Ajustar celdas
+            .product-grid__cont-img {
+                width: 97%;
+                height: 97%;
+            }
+            .product-grid__cont-img:nth-child(2) {
+                width: 100%;
+                height: 100%;
+        
+                grid-column: 2/3;
+                grid-row: 1/3;
+            }
+            .product-grid__cont-img:first-child {
+                place-self: start start;
+            }
+            .product-grid__cont-img:nth-child(3) {
+                place-self: start end;
+            }
+            .product-grid__cont-img:nth-child(4) {
+                place-self: end start;
+            }
+            .product-grid__cont-img:last-child {
+                place-self: end end;
+            }
+        }
+
+        // Algunos Productos
+        .some-products-page-grid {
+            width: 100%;
+        
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: repeat(1, 1fr);
+            grid-auto-flow: dense;
+            // Contenedor de texto
+            .some-products-grid__cont-text {
+                grid-column: 2/3;
+            }
+            // Productos
+            .some-products-grid__products {
+                grid-column: 1/2;
+            }
+        }
+
+        // Producto Principal
+        .product-main {
+            display: flex;
+
+            // Contenedor de imagen
+            .product-main__cont-img {
+                flex-basis: 50%;
+            }
+            // Contenedor de texto
+            .product-main__cont-text {
+                flex-basis: 50%;
+                // Detalles del producto
+                .product-main-cont-text__details {
+                    // parrafo
+                    .product-main-cont-text-details__p {
+                        margin: 0 0 80px 0;
+                    }
+                }
+            }
+        }
+    }
+    // Footer
+    footer {
+        .footer {
+            justify-content: space-around;
+            // parrafo
+            p {
+                display: block;
+            }
+        } 
+    }
+}
+// Responsive 651px // mobile first
+@media screen and (min-width: 651px) {
+    main {
+        margin: 180px 0 0 0;
+
+        // Producto Principal
+        .product-main {
+            width: 90%;
+            margin: 0 auto 50px auto;
+
+            border: none;
+            border: 1px solid $color-gris-bordes;
+        }
+    }
+}
+// Responsive 650px // responsive design
+@media screen and (max-width: 650px) {
+    // header
+    .header {
+        // input aparecer barra de busqueda
+        #button-search {
+            &:checked ~ .navigation__search--responsive {
+                display: flex;
+            }
+        }
+        // Navigation
+        .navigation {
+            padding: 10px 0;
+            // Boton para aparecer barra de busqueda
+            .button-menu-links__label {
+                flex-basis: 18%;
+            }
+            // Logo
+            .navigation__logo {
+                min-width: 125px;
+                margin: 0;
+            }
+            
+            // Barra de busqueda
+            .navigation__search {
+                display: none;
+            }
+        }
+        // Iconos del usuario
+        .navigation__user {
+            flex-basis: 25%;
+
+            // Icono de busqueda
+            .navigation__icon-search {
+                display: block;
+            }
+        }
+    }
+}

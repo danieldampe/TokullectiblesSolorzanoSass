@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/f365743f4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+
+        <!-- NAVBAR -->
+        <header class="header">
+            <input type="checkbox" name="button-menu" id="button-menu-links">
+            <input type="checkbox" name="botton-buscar" id="button-search">
+            <!-- NAVIGATION -->
+            <nav class="navigation">
+                <label class="button-menu-links__label" for="button-menu-links">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <div class="navigation__logo">
+                    <a href="#">
+                        <img src="./image/logo-blue.webp" alt="logo">
+                    </a>
+                </div>
+                <div class="navigation__search">
+                    <input class="navigation-search__input" type="text" placeholder="Buscar...">
+                    <div class="navigation-search__cont-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="navigation__user">
+                    <div class="navigation__icon-search">
+                        <label for="button-search" class="button-search__label">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </label>
+                    </div>
+                    <div class="navigation-user__icon-user">
+                        <a href="#">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                    <div class="navigation-user__account">
+                        <a href="#">Cuenta</a>
+                    </div>
+                    <div class="navigation-user__cart">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <p>Carrito</p>
+                        </a>
+                    </div>
+                    <div class="navigation-user__icon-cart">
+                        <a href="#">
+                            <i class="fa-solid fa-cart-shopping"></i> 
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <!-- BUSCADOR RESPONSIVE -->
+            <div class="navigation__search--responsive">
+                <input class="navigation-search__input" type="text" placeholder="Buscar...">
+                <div class="navigation-search__cont-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+            <!-- NAVBAR LINKS -->
+            <nav class="navigation-links">
+                <ul class="navigation-links__ul">
+                    <li><a href="#">Kamen Rider</a></li>
+                    <li><a href="#">Super Sentai</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- PRODUCTOS GRID -->
+            <article>
+                <div class="product-grid">
+                    <div class="product-grid__cont-img">
+                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/1000175091_1_500x.jpg?v=1653880460" alt="producto imagen">
+                    </div>
+                    <div class="product-grid__cont-img">
+                        <img src="./image/geartlingerMemorial.webp" alt="producto imagen">
+                    </div>
+                    <div class="product-grid__cont-img">
+                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/220509_kiramei_changer_ME_main_visual_500x.jpg?v=1652265800" alt="producto imagen">
+                    </div>
+                    <div class="product-grid__cont-img">
+                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/20220418_genmmusou-gashat_thousandark_dankurotoprogrisekey_8jahwy_2fw_01_500x.jpg?v=1650282167" alt="producto imagen">
+                    </div>
+                    <div class="product-grid__cont-img">
+                        <img src="./image/gokaiCelular/gokai-celular.png" alt="producto imagen">
+                    </div>
+                </div>
+            </article>
+            <!-- ALGUNOS PRODUCTOS -->
+            <article>
+                <!-- PRODUCTOS KAMEN RIDER -->
+                <section>
+                    <div class="some-products-page-grid">
+                        <div class="some-products-grid__cont-text">
+                            <div class="some-products-cont-text__tittle">
+                                Kamen Rider Revice
+                            </div>
+                            <div class="some-products-grid-con-text__description">
+                                Inner demons in two, the 3rd Reiwa Rider bursts onto the scene with a family of allies!
+                            </div>
+                            <div class="some-products-grid-con-text__cont-button">
+                                <a href="#">
+                                    <button class="some-products-grid-con-text__button">Ver mas</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="some-products-grid__products">
+                            <div class="some-products__cont-cards">
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="./image/revice/dXGiffardRexVistamp.webp" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Giffard Rex Vistamp
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $68
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="./image/revice/dXWeekendriver.webp" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Week Endriver
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $130
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="./image/revice/dXRollingVistamp.webp" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Rolling Vistamp
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $38
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/1000164389_1_500x.jpg?v=1644363845" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            SH Figuarts Kamen Rider Evil Bat / Jackal Genome
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $115
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/1000170888_1_500x.jpg?v=1646006229" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Holy Wing Vistamp
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $48
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="./image/gokaiCelular/gokai-celular.png" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            Producto recontra al al azar
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $50
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/20220425_vistamp-selection02_6hadvw_k0uc2_01_500x.jpg?v=1650888189" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Vistamp Selection 02
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $25
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>            
+                <!-- PRODUCTOS SUPER SENTAI -->
+                <section>
+                    <div class="some-products-page-grid">
+                        <div class="some-products-grid__cont-text">
+                            <div class="some-products-cont-text__tittle">
+                                Avataro Sentai Don Brothers
+                            </div>
+                            <div class="some-products-grid-con-text__description">
+                                The 46th Super Sentai series bringing us Kikanoid rangers and a unique team lead!
+                            </div>
+                            <div class="some-products-grid-con-text__cont-button">
+                                <a href="#">
+                                    <button class="some-products-grid-con-text__button">Ver mas</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="some-products-grid__products">
+                            <div class="some-products__cont-cards">
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/1000174631_9_500x.jpg?v=1653917567" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            Change Heroes Ninninger Alter
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $35
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/1000174627_1_500x.jpg?v=1653922115" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX RyuKonogeki & Tigaurdra Set
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $130
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/B09Y5LLP83.09.PT02._SCLZZZZZZZ_500x.jpg?v=1651146748" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Don OnitaiJin
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $135
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/1000174633_1_500x.jpg?v=1653917746" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Avataro Gear Set 05
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $26
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/9_12378_o_1fre8qrsf1bttmcm1vfh162rjk05r_500x.jpg?v=1644431529" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            Change Heroes Don Momotaro Alter & ToQGer Alter Set
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $58
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/3_12384_o_1fre9auj1hdd1ntca2qpe72nq4t_500x.jpg?v=1644431368" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX Avataro Gear Set 03
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $26
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="some-products__card">
+                                    <div class="some-products-card__cont-img">
+                                        <img src="https://cdn.shopify.com/s/files/1/1377/3219/products/1000168404_1_500x.jpg?v=1640603768" alt="">
+                                    </div>
+                                    <div class="some-products-card__cont-text">
+                                        <div class="some-products-card-cont-text__name">
+                                            DX DonBlaster & Buckle Set
+                                        </div>
+                                        <div class="some-products-card-cont-text__price">
+                                            $100
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>  
+            </article>
+            <!-- PRODUCTO DESTACADO -->
+            <article>
+                <div class="product-main__cont-text-view">
+                    <div class="product-main-cont-text-view__tittle">
+                        Producto Destacado
+                    </div>
+                    <div class="product-main-cont-text__more">
+                        <a href="#">
+                            Ver detalles
+                        </a>
+                    </div>
+                </div>
+                <div class="product-main">
+                    <div class="product-main__cont-img">
+                        <img src="./image/geartlingerMemorial.webp" alt="Geartlinger Memorial">
+                    </div>
+                    <div class="product-main__cont-text">
+                        <div class="product-main-cont-text__tittle">
+                            <h4 class="product-main-cont-text-tittle__h4">Geartlinger Memorial Edition</h4>
+                            <div class="product-main-cont-text-tittle__release">
+                                <div class="main-cont-text-tittle-release__text">
+                                    <div class="main-text-tittle-release-text">
+                                        <b>Producto Lanzado:</b> Abril 2023
+                                    </div>
+                                    <ul>
+                                        <li><b>Serie:</b> Kikai Sentai Zenkaiger</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="product-main-cont-text__line">
+                        <div class="product-main-cont-text__details">
+                            <p class="product-main-cont-text-details__p">
+                                El Memorial Geartlinger aumenta el tamaño en un 30 %, pasando de 10,75" a 14" de largo, lo que lo acerca más a la precisión de la pantalla. También han mejorado las proporciones y se han deshecho de los agujeros de los tornillos para promover esto.
+                            </p>
+                            <div class="product-main-cont-text-details__price">
+                                <div class="product-main-cont-text-details-price__text">
+                                    Precio:
+                                </div>
+                                <div class="product-main-cont-text-details__number">
+                                    $190.00
+                                </div>
+                            </div>
+                            <div class="product-main-cont-text-details__buttons">
+                                <div class="product-main-cont-text-details__button-add">
+                                    <button>Añadir al carrito</button>
+                                </div>
+                                <div class="product-main-cont-text-details__button-buy">
+                                    <button>Comprar ahora</button>
+                                </div>
+                            </div>
+                            <div class="product-main-cont-text-details__share">
+                                <div class="main-cont-text-details-share__text">
+                                    Comparte este producto:
+                                </div>
+                                <div class="main-cont-text-details-share__redes">
+                                    <div class="cont-facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                    <div class="cont-twitter">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                    <div class="cont-instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>  
+                                </div>                  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <footer> 
+            <!-- change -->
+            <div class="footer">
+                <div class="footer__cont-redes">
+                    <p>Nuestras Redes</p>
+                    <div class="footer-cont-redes__icons">
+                        <div class="cont-facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <div class="cont-twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                        <div class="cont-instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__cont-logo">
+                    <img src="./image/logo-blue.webp" alt="">
+                </div>
+                <div class="footer__cont-payment">
+                    <p>Metodos de Pago</p>
+                    <div class="footer-cont-payment__icons">
+                        <div class="cont-paypal">
+                            <i class="fa-brands fa-cc-paypal"></i>
+                        </div>
+                        <div class="cont-visa">
+                            <i class="fa-brands fa-cc-visa"></i>
+                        </div>
+                        <div class="cont-mastercard">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+</html>
